@@ -1,0 +1,18 @@
+{
+  "name": "node-serverless-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "package": "./node_modules/.bin/sls package"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.224.1",
+    "babel-loader": "^7.1.4",
+    "serverless": "^1.26.1",
+    "serverless-webpack": "^5.1.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

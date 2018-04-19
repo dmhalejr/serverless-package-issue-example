@@ -1,0 +1,19 @@
+service: node-serverless-package
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${env:STAGE}
+  memorySize: 128
+
+functions:
+  hello:
+    handler: handler.hello
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
