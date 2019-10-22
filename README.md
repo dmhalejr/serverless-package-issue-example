@@ -1,8 +1,8 @@
 ## Reproducible Example
 
 ```
-npm install # first time
-npm run package
+yarn install # first time
+yarn package
 ```
 
 Although I understand that the documentation states that running `sls package` is going to package the `service while using the default stage (dev) and default region (us-east-1).`

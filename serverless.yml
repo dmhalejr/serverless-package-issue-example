@@ -1,11 +1,12 @@
 service: node-serverless-package
 
 plugins:
+  - serverless-dotenv-plugin
   - serverless-webpack
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.15
   stage: ${env:STAGE}
   memorySize: 128
 
